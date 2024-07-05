@@ -1,0 +1,56 @@
+<style>
+    body{
+        background-color: aqua;
+        font-family: monospace;
+    }
+    #Cipars {
+        text-align: center;
+        color: white;
+    }
+    button {
+        width: 250px;
+        height: 20px;
+        background-color: black;
+        color: white;
+    }
+    #pluspoga{
+        color: green;
+    }
+#minuspoga{
+    color: red;
+}
+</style>
+
+<html>
+    <head>
+        <Title>Tally conter</Title>
+    </head>
+
+    <body>
+     <h1 id="Cipars">0</h1> 
+     <center>
+     <button id="pluspoga" onclick="plus()">+</button> 
+     <button id="minuspoga" onclick="minus()">-</button> 
+    </center>
+    </body>
+
+    <script>
+        let pogaplus=document.getElementById("pluspoga")
+        let pogaminus=document.getElementById("minuspoga")
+        let cipars=document.getElementById("Cipars")
+        let skaits=0
+
+        function plus() {
+            skaits++;
+            console.log(skaits)
+
+            cipars.innerHTML = skaits;
+        } 
+        function minus() {
+            skaits--;
+            console.log(skaits)
+
+            cipars.innerHTML = skaits;
+        }
+    </script>
+</html>
